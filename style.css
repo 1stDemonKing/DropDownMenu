@@ -1,0 +1,93 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-image: url(assets/images/zoro.jpg);
+}
+#navbar
+{
+    background-color: green;
+    color: white;
+    font-family: sans-serif;
+}
+#navbar ul
+{
+    /* padding: 15px; */
+    text-align: center;
+}
+#navbar ul li
+{
+    display: inline-block;
+    margin: 9px;
+    padding: 9px;
+}
+#navbar ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.fa-solid
+{
+    margin-right: 9px;
+}
+#navbar ul li:first-child
+{
+    background-color: #2bab0d;
+    border-radius: 4px;
+}
+#navbar ul li:hover
+{
+    background-color: #2bab0d;
+    border-radius: 4px;
+}
+.subNav
+{
+    display: none;
+}
+#navbar ul li:hover .subNav
+{
+    display: block;
+    position: absolute;
+    background-color: green;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+#navbar ul li:hover .subNav ul li
+{
+    display: block;
+    text-align: left;
+    padding: 9px;
+    background: transparent;
+    border-bottom: 1px solid white;
+}
+#navbar ul li:hover .subNav ul li:last-child
+{
+    border-bottom: none;
+}
+#navbar ul li:hover .subNav ul li a:hover
+{
+    color: #b2ff00;
+}
+.subOfSubNav
+{
+    display: none;
+}
+.subNav ul li
+{
+    white-space: nowrap;
+}
+.subNav ul li:hover .subOfSubNav
+{
+    display: block;
+    position: absolute;
+    margin-left: 164px;
+    background: green;
+    margin-top: -30px;
+}
+.subNav ul li .fa-angle-right
+{
+    float: right;
+}
